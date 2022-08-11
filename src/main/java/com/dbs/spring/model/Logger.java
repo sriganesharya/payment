@@ -28,12 +28,9 @@ public class Logger {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(length = 11)
 	private int loggerid;
-	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
+	@ManyToOne( cascade = CascadeType.REMOVE)
 	@JoinColumn(name="customerid")
 	private Customers customeriD;
-	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
-	@JoinColumn(name="employeeid")
-	private Employee employeeid;
 	private String screenname;
 	private String action;
 	private String ipaddress;

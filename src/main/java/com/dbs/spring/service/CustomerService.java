@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import com.dbs.spring.model.Customers;
 import com.dbs.spring.repository.CustomerRepository;
+import com.dbs.spring.service.interfaces.CustomerServiceInterface;
 
 @Service
 public class CustomerService implements CustomerServiceInterface{

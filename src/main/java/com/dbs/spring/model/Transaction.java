@@ -28,31 +28,31 @@ public class Transaction {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(length = 11)
 	private int transactionId;
-	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
+	@ManyToOne( cascade = CascadeType.REMOVE)
 	@JoinColumn(name="customerid")
 	private Customers customerId;
-	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
+	@ManyToOne( cascade = CascadeType.REMOVE)
 	@JoinColumn(name="currencycode")
 	private Currency currencyCode;
-	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
+	@ManyToOne( cascade = CascadeType.REMOVE)
 	@JoinColumn(name="senderbic")
 	private Banks senderBIC;
-	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
+	@ManyToOne( cascade = CascadeType.REMOVE)
 	@JoinColumn(name="receiverbic")
 	private Banks receiverBIC;
-	@Column(length = 11)
+	@Column(length = 14)
 	private String receiverAccountHolderNumber;
 	private String receiverAccountHolderName;
-	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
+	@ManyToOne( cascade = CascadeType.REMOVE)
 	@JoinColumn(name = "transfertypecode")
 	private Transfertype transferTypeCode;
-	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
+	@ManyToOne( cascade = CascadeType.REMOVE)
 	@JoinColumn(name="messagecode")
 	private MessageCode messageCode;
 	private double currencyAmount;
 	private double transferFees;
 	private double inrAmount;
-	private Date transferDate;
+	private String transferDate;
 
 	public Transaction() {
 		// TODO Auto-generated constructor stub

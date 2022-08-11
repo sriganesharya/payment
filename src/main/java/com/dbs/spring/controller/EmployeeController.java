@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.dbs.spring.model.Employee;
-import com.dbs.spring.service.EmployeeServiceInterface;
+import com.dbs.spring.service.interfaces.EmployeeServiceInterface;
 
 @RestController
 public class EmployeeController {

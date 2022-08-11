@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import com.dbs.spring.model.Employee;
 import com.dbs.spring.repository.EmployeeRepository;
+import com.dbs.spring.service.interfaces.EmployeeServiceInterface;
 
 @Service
 public class EmployeeService implements EmployeeServiceInterface {
