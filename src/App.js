@@ -1,26 +1,23 @@
 import './App.css';
 import React from "react";
 // import { Button } from 'primereact/button';
-import { Routes, Route } from "react-router-dom";
-import { HomePage } from './pages/HomePage';
-import { AboutPage } from './pages/AboutPage';
-import { CustomerPage } from './pages/CustomerPage';
-import { Navbar } from './Navbar';
-// import { CustTable } from './Components/customers/CustTable';
-import { CustDetails } from './Components/customers/CustDetails';
+//import { Routes, Route } from "react-router-dom";
+import { HomePage } from './Components/HomePage';
+//import { Navbar } from './Navbar';
 
 const App = () =>{
 
   return(
     <div className = "App">
-      <Navbar />
-      <h3>DBS React Training</h3>
-      <Routes>
+      <h2>PAYMENT</h2>
+      <HomePage />
+      
+      {/* <Routes>
         <Route path="/home" element={<HomePage />}/>
         <Route path="/about" element={<AboutPage />} />
         <Route path="/customers" element={<CustomerPage />} />
         <Route path="/customers/:id" element={<CustDetails />} />
-      </Routes>
+      </Routes> */}
     </div>
   );
 
