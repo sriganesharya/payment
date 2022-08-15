@@ -18,7 +18,7 @@ public class BankSevice implements BankServiceInterface {
 	@Override
 	public Banks fetchByBic(String bic) {
 		try {
-			return bankRepository.findById(bic).orElseThrow(()->{
+			return this.bankRepository.findById(bic).orElseThrow(()->{
 				System.out.println("Error finding bank in database");
 				return new EntityNotFoundException("Bank with "+bic+" does not exist");
 			});

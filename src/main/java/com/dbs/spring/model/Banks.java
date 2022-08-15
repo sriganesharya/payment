@@ -3,7 +3,6 @@ package com.dbs.spring.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.JoinTable;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
