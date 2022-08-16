@@ -34,7 +34,6 @@ export function Receiver() {
         , [bic])
 
     const searchName = e =>{
-        
         fetch("/assets/text-files/sdnlist.txt")
         .then(r => r.text())
         .then(text => {
@@ -43,8 +42,6 @@ export function Receiver() {
                 setError("The given name is blocked for transactions. Please enter another name");
             }
         });
-        
-        
     }
 
     return(

@@ -1,9 +1,9 @@
 import axios from 'axios';
 import './HomePage.css';
-//import { ProgressSpinner } from 'primereact/progressspinner';
 import {  useEffect, useState } from 'react';
-//import { useParams } from 'react-router-dom';
-//import useCustomer from '../hooks/useCustomer';
+import { Receiver } from './Receiver';
+import Select from "react-select/dist/declarations/src/Select";
+
 
 export function Sender() {
 
@@ -17,6 +17,20 @@ export function Sender() {
     const [address, setAddress] = useState();
     const [type, setType] = useState();
     const [transferType, setTransferType] = useState();
+    const transferOptions = [
+        { value:transferType, label: transferType }
+      ]
+    const messageOptions = [
+        {value : 'CHQB', label : 'CHBQ'},
+        {value : 'CORT', label : 'CORT'},
+        {value : 'HOLD', label : 'HOLD'},
+        {value : 'INTC', label : 'INTC'},
+        {value : 'PHOB', label : 'PHOB'},
+        {value : 'PHOI', label : 'PHOI'},
+        {value : 'PHON', label : 'PHON'},
+        {value : 'REPA', label : 'REPA'},
+        {value : 'SDVA', label : 'CHBQ'}
+    ]
 
 
     const handleChange = (e) => {
@@ -35,7 +49,7 @@ export function Sender() {
                 setType(customer.customercity);
                 
             }).catch(err => {
-                //setLoading(false)
+                setCustomer(null);
                 setError("Couldn't fetch customer : " + err)
             })
 
@@ -140,11 +154,18 @@ export function Sender() {
                     </div>
                     <div className="col-lg-2"></div>
                 </div>
+                <Receiver />
 
-        
-                
+
+                <div className="row mt-5 text-center">
+                    <div className="col-lg-4"></div>
+                    <div className="col-lg-4">
+                        <button className="btn btn-success" type="button" >Submit</button>
+                    </div>
+                </div>
         </div>
 		<div className="col-lg-4"></div>
+        
         
     </div>
         
