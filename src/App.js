@@ -9,7 +9,6 @@ const App = () =>{
 
   return(
     <div className = "App">
-      <h2>PAYMENT</h2>
       <HomePage />
       
       {/* <Routes>

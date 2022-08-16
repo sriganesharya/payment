@@ -6,9 +6,5 @@ export function Transaction(props) {
     const [transferType] = props;
     
 
-    return(
-        <div>
-            <Select options={transferOptions}/>
-        </div>
-    );
+   
 }

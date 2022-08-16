@@ -6,6 +6,8 @@
 }
 input[type="text"] {
     text-align: center;
+    font-weight: bold;
+    font-display: 56px;
   }
 .container1{
     /* background-color: aquamarine; */
@@ -32,5 +34,31 @@ color: red;
      background-color: black;
 }
 img{
+    padding-bottom: 50px;
+}
+.rec{
+    font-family:'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: bold;
+    /* background-color: antiquewhite; */
+}
+body {
+    background-image: url("C:\Users\Administrator\Desktop\DBS_Training\myapp\public\assets\images\Log.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   /* background-size: cover;  */
+   background-color: rgb(17, 1, 1);
+   background-position:  center right;
+   }
+.cus{
+color: white;
+}
+.in{
+    color:aliceblue ;
+    font-weight: bold;
+}
+h2{
+    color: aliceblue;
+    padding-left: 450px;
     padding-bottom: 50px;
 }
